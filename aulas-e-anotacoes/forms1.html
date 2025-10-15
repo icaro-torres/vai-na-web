@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula Forms</title>
+</head>
+<body>
+    <h1>Bom dia!</h1>
+    <form action="">
+        <p>
+            <label for="nome">Nome:
+                <input id="nome" name="Nome" type="text" />
+            </label>
+        
+        </p>
+
+        <p>
+            <label for="email">E-mail:
+                <input type="email" id="email" name="Email">
+            </label>
+        </p>
+
+        <p>
+            <label for="idadie">Idade:
+                <input type="number" name="Idade" id="idade">
+            </label>
+        </p>
+
+        <p>
+            <label for="niver">Aniversário:
+                <input type="date" name="Data_Nascimento" id="niver">
+            </label>
+        </p>
+
+        <p>
+            <label for="hora">Hora:
+                <input type="time" name="Hora" id="hora">
+            </label>
+        </p>
+
+        <p>
+            <label for="telefone">Telefone:
+                <input type="tel" name="telefone" id="Numero">
+            </label>
+        </p>
+
+        <p>
+            <label for="senha">Senha:
+                <input type="password" name="Senha" id="senha">
+            </label>
+        </p>
+
+        <p>
+            <h3>Qual sua linguagem preferida?</h3>
+            <input type="radio" name="Fav_lang" id="javascript" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+
+            <input type="radio" name="Fav_lang" id="java" value="Java">
+            <label for="java">Java</label>
+
+            <input type="radio" name="Fav_lang" id="python" value="Python">
+            <label for="python">Python</label>
+
+            <input type="radio" name="Fav_lang" id="golang" value="GoLang">
+            <label for="">GoLang</label>
+        </p>
+
+        <p>
+            <input type="checkbox" name="Termos" id="termos">
+            <label for="termos">Aceito os termos.</label>
+        </p>
+
+        <p>
+            <input type="checkbox" name="Comunidade" id="comunidade">
+            <label for="comunidade">Entre na nossa comunidade.</label>
+        </p>
+
+        <input type="submit" />
+        <button type="reset">Refazer</button>
+    </form>
+</body>
+</html>

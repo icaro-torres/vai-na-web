@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula forms RegEx</title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+
+    <form action="">
+        <p>
+            <label for="nome">Nome completo:
+                <input type="text" name="Nome" id="nome" placeholder="Digite seu nome" pattern="^[A-Za-zÀ-ÿ\s]{3,50}$" title="O nome deve conter apenas letras e espaços (mínimo de 3 caracteres).">
+            </label>
+        </p>
+
+        <p>
+            <label for="cpf">CPF:
+                <input type="text" name="CPF" id="cpf" placeholder="Digite seu CPF" pattern="^\d{3}\.?\d{3}\.?\.{3}-?\d{2}$" title="Digite um CPF válide. Exemplo: 123.456.789-10 ou 12345678910.">
+            </label>
+        </p>
+
+        <p>
+            <label for="tel">Telefone:
+                <input type="tel" name="Telefone" id="tel" placeholder="(xx) xxxxx-xxxx" pattern="^\(?\d{2}\)?\s?\d{4,5}-?\d{4}$" title="Formato esperado: (99) 99999-9999.">
+            </label>
+        </p>
+
+        <p>
+            <label for="email">E-mail:
+                <input type="email" name="Email" id="email" placeholder="exemplo@dominio.com" pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,}$" title="Digite um e-mail válido (exemplo: usuario@dominio.com).">
+            </label>
+        </p>
+
+        <p>
+            <label for="senha">Senha:
+                <input type="password" name="Senha" id="senha" pattern="^(?=.*[a-z])(?=.[A-Z])(?=.*\d).{8,}$" title="A senha deve ter ao menos 8 caracteres, incluindo maiúsculas, minúsculas e números.">
+            </label>
+        </p>
+
+        <input type="submit"/>
+    </form>
+</body>
+</html>
