@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// o * significa global
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+header {
+    border: solid 2px green;
+
+    h1 {
+        color: red;
+    }
+
+    p {
+        color: purple;
+    }
+}
+
+// pra class se usa ponto (.) e pra id se usa jogo da velha (#)
+.card {
+    border: solid 2px red;
+    width: 500px;
+    height: 300px;
+    background-image: url("https://blog.fornettostore.com.br/wp-content/uploads/2025/03/blog-receita-frango-catupiry.jpg.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    p {
+        font-size: 24px;
+    }
+}
